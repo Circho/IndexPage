@@ -1,0 +1,392 @@
+@CHARSET "UTF-8";
+
+/**delete all the underline*/
+a,a:active,a:visited,a:hover {
+	text-decoration: none;
+}
+
+/*css for web*/
+@media ( min-width : 60em) {
+	/**
+
+foot part for web
+*/
+	#footer {
+		background-color: #333;
+		margin: 0px;
+		width: 100%;
+		color: #e6e6e6;
+		padding-top: 45px;
+		padding-bottom: 20px;
+		display: inline-block;
+	}
+	#foot-main {
+		max-width: 1240px;
+		margin: 0 auto;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1em;
+		text-align: center;
+		background-repeat: repeat-x, repeat;
+		background-size: 100px 15px, 140px 140px;
+		clear: both;
+		text-align: center;
+	}
+	.foot-span {
+		font-size: 18px;
+		font-style: italic;
+		font-weight: bold;
+	}
+	.foot-line {
+		border-bottom: solid 1px rgba(255, 255, 255, 0.0976562);
+		width: 98%;
+		margin: 0 auto;
+		height: 3px;
+	}
+	.support-img {
+		width: 64px;
+		height: 64px;
+	}
+	#footer-main-left {
+		width: 60%;
+		float: left;
+	}
+	#footer-main-right {
+		width: 40%;
+		float: right;
+	}
+	.foot-figure {
+		display: inline-block;
+		margin: 20px;
+	}
+	.foot-figure a {
+		color: #e6e6e6;
+		font-weight: normal;
+		font-style: normal;
+		text-decoration: none;
+		display: block;
+		padding: 8px 12px;
+		box-sizing: border-box;
+	}
+	.foot-figure a:VISITED{
+		color:  #e6e6e6;
+	}
+	#footer-main-right a{
+	color:  #e6e6e6;
+	}
+
+	#copyright {
+		width: 100%;
+		float: right;
+		font-size: 14px;
+	}
+	#copyright-words {
+		margin-top: 15px;
+	}
+
+	/***** end of footer part**/
+	header {
+		margin: 0;
+		left: 0px;
+		height: 80px;
+		width: 100%;
+		top: 0px;
+		opacity: 0.8;
+		display: block;
+		z-index: 99999;
+	}
+	.ui-header {
+		position: fixed;
+	}
+	.ui-header .ui-title,.ui-title {
+		margin: 0 20px;
+		text-align: left;
+	}
+	.head-title {
+		font-size: 45px;
+		margin-left: 10px;
+	}
+	.head-imge {
+		width: 45px;
+	}
+	.web-nav {
+		position: absolute;
+		right: 10%;
+		top: 0;
+	}
+	.web-nav ul {
+		list-style: none;
+	}
+	.web-nav ul li {
+		display: inline-block;
+		margin: 20px;
+	}
+	.head-left-menu {
+		display: none;
+	}
+	#navPanel {
+		display: none;
+	}
+	#silde {
+		left: 0%;
+		width: 400%;
+		height: 100%;
+		position: relative;
+	}
+	.content-block {
+		margin: 0;
+		padding: 0;
+		width: 25%;
+		height: 100%;
+		float: left;
+		display: block;
+		text-align: left;
+		position: inherit;
+	}
+	.content-img {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	/**/
+	.silde-nav {
+		top: 200px;
+		position: absolute;
+		right: 30px;
+		z-index: 99;
+		height: 50px;
+	}
+	.silde-link {
+		width: 100px;
+		height: 50px;
+		padding: 1px;
+		margin: 1px;
+		cursor: pointer;
+		opacity: 0.5;
+	}
+	.side-text-content {
+		position: absolute;
+		top: 100px;
+		left: 50px;
+		color: #f9f9f9;
+		width:50%;
+	}
+
+	/**/
+	#empty {
+		height: 90px;
+	}
+
+	/***introduce part*****/
+	#SimpleIntroduce {
+		min-height: 100px;
+		color: #f1f1f1;
+		background-color: #81a6b0;
+		text-align: center;
+		padding: 100px;
+	}
+	.introduce-head {
+		font-size: 60px;
+	}
+	.introduce-text {
+		font-size: 30px;
+	}
+	#introduceTop {
+		font-size: 3px;
+	}
+	.Introduce-content {
+		position: static;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	/*interested*/
+	#interested {
+		margin: 0px;
+		color: #334145;
+		text-align: center;
+		background-color: #f1f1f1;
+		min-height: 100px;
+		padding: 50px;
+	}
+	.interested-content {
+		margin: 0 auto;
+	}
+	.interested-text {
+		font-size: 30px;
+	}
+
+	/*******send message part******/
+	#SendMsg {
+		background-color: #495D63;
+		color: #f1f1f1;
+		min-height: 100px;
+		padding: 50px;
+		margin: 0px;
+		text-align: center;
+	}
+	.sendMsg-form {
+		width: 600px;
+		margin: 0 auto;
+		text-align: left;
+	}
+	.mobile-silde {
+		display: none;
+	}
+}
+
+/*css for mobile*/
+@media ( max-width : 60em) {
+	/*foot for mobile*/
+	#footer-main-left {
+		display: none;
+	}
+	#footer-main-right {
+		display: none;
+	}
+	#copyright {
+		width: 100%;
+		float: right;
+		font-size: 14px;
+	}
+	#copyright-words {
+		margin-top: 15px;
+	}
+	.web-nav {
+		display: none;
+	}
+	.head-imge {
+		width: 20px;
+	}
+	.head-left-menu {
+		left: 5px;
+		position: absolute;
+	}
+	#empty {
+		display: none;
+	}
+	.content-img {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	#silde-control {
+		display: none;
+	}
+	.content-block {
+		margin: 0;
+		padding: 0;
+		float: left;
+		display: block;
+		position: inherit;
+	}
+	.side-text-content {
+		position: absolute;
+		left: 50px;
+		color: #f9f9f9;
+	}
+	#creative-text {
+		top: 5%;
+	}
+	#intelligence-text {
+		top: 28%;
+	}
+	#swift-text {
+		top: 52%;
+	}
+	#openSource-text {
+		top: 72%;
+	}
+	#copyright {
+		float: right;
+		padding-bottom: 15px;
+		background-color: #333;
+		border-color: #ddd;
+		text-align: center;
+		border-top-color: #81a6b0;
+		border-top-style: solid;
+		border-top-width: 1px;
+	}
+	#copyright-words {
+		color: #e6e6e6;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		font-weight: normal;
+	}
+
+	/***introduce part*****/
+	#SimpleIntroduce {
+		min-height: 100px;
+		color: #f1f1f1;
+		background-color: #81a6b0;
+		text-align: center;
+		padding: 100px;
+	}
+	.introduce-head {
+		font-size: 40px;
+	}
+	.introduce-text {
+		font-size: 25px;
+	}
+	#introduceTop {
+		font-size: 5px;
+	}
+	.Introduce-content {
+		position: static;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	/*interested*/
+	#interested {
+		margin: 0px;
+		color: #334145;
+		text-align: center;
+		background-color: #f1f1f1;
+		min-height: 100px;
+		padding: 50px;
+	}
+	.interested-content {
+		margin: 0 auto;
+	}
+	.interested-text {
+		font-size: 25px;
+	}
+
+	/*******send message part******/
+	#SendMsg {
+		background-color: #495D63;
+		color: #f1f1f1;
+		min-height: 100px;
+		padding: 50px;
+		margin: 0px;
+		text-align: center;
+	}
+	.sendMsg-form {
+		width: 400px;
+		margin: 0 auto;
+		text-align: left;
+	}
+	.mobile-silde-content {
+		height: 300px;
+		border-radius: .3125em;
+		margin: .5em;
+		padding: 1em;
+	}
+	.mobile-silde-content h3 {
+		border-bottom: 1px solid #ddd;
+		font-size: 1.5em;
+		font-weight: 300;
+		color: #3eb249;
+		padding-bottom: .25em;
+		margin: 0 0 .5em;
+		font-family: 'Open Sans', sans-serif;
+		display: block;
+	}
+	.mobile-silde-content p {
+		font-size: 1.1em;
+		font-weight: 300;
+		line-height: 1.4;
+		margin: .7em 0;
+	}
+}

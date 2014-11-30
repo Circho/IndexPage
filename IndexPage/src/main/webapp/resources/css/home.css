@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+/**delete all the underline*/
+a,a:active,a:visited,a:hover {
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/**head part*/
+header {
+	background-color: #f1f1f1;
+	margin: 0;
+	padding: 0;
+}
+
+.head-content {
+	width: 950px;
+	margin: 0 auto 25px;
+}
+
+.head-imge {
+	width: 40px;
+}
+
+.main-nav {
+	display: inline-block;
+}
+
+.home-Image {
+	display: inline-block;
+}
+
+.home-search {
+	display: inline-block;
+}
+
+.main-nav ul {
+	list-style: none;
+}
+
+.main-nav ul li {
+	display: inline-block;
+	margin: 20px;
+}
+
+/* login area */
+.login-control {
+	width: 950px;
+	margin: 0 auto 25px;
+}

@@ -11,7 +11,7 @@
 <script src="<c:url value="/resources/dojo-toolkit/dojo/dojo.js" />"
 	data-dojo-config="async: true"></script>
 <link rel="stylesheet"
-	href="<c:url value="/resources/dojo-toolkit/dijit/themes/nihilo.css" />" />
+	href="<c:url value="/resources/dojo-toolkit/dijit/themes/nihilo/nihilo.css" />" />
 
 <!--  local js-->
 <script type="text/javascript"

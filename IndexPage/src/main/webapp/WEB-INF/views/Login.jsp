@@ -3,6 +3,9 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 
+
+
+
 	<c:if test="${sessionScope.IsLogin.level>=1}">
 用户：${sessionScope.IsLogin.userName} 已经登陆
 </c:if>

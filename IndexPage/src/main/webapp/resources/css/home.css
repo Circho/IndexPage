@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
 /**delete all the underline*/
-a,a:active,a:visited,a:hover {
+a, a:active, a:visited, a:hover {
 	text-decoration: none;
 }
 
@@ -16,43 +16,113 @@ header {
 	margin: 0;
 	padding: 0;
 	background-color: #fff;
+	display: block;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	height: 60px;
+	min-width: 600px;
 }
 
 .head-content {
-//	width: 950px;
-//	margin: 0 auto;
 	
 }
 
 .head-imge {
-	width:130px;
+	width: 127px;
+	height: 50px;
+	margin: 5px;
 }
 
+}
 .main-nav {
 	display: inline-block;
 }
 
 .home-Image {
+	max-width: 127px;
+	min-width: 127px;
 	display: inline-block;
+	height: 60px;
+	line-height: 58px;
+	vertical-align: middle;
 }
 
 .home-search {
-	display: block;
-	
-}
-
-.home-login{
 	display: inline-block;
-	
+	padding-left: 50px;
+	position: relative;
+	max-width: 650px;
+	min-width: 300px;
+	width: 40%;
+	z-index: 986;
+	height: 60px;
+	line-height: 58px;
+	vertical-align: middle;
+	background-color: red;
+	position: relative;
 }
 
-.main-nav ul {
+.input-search {
+	width: 100%;
+}
+
+.home-search-input {
+	display: inline-block;
+	margin: 0;
+	height:50px;
+	padding-top: 10px;
+	vertical-align: top;
+	max-width: 600px;
+	width: 80%;
+}
+
+.home-search-button {
+	margin: 0;
+	height: 50px; padding-top : 10px;
+	vertical-align: top;
+	background-color: green;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+.home-login {
+	display: inline-block;
+	float: right;
+	height: 50px;
+	line-height: 58px;
+	vertical-align: middle;
+	background-color: blue;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	position: relative;
+	text-align: right;
+	z-index: 986;
+}
+
+.main-nav {
+	margin:0;
+	padding: 0;
+	position: relative;
+	z-index: 102;
+	height: 59px;
+	background-color: orange;
+}
+
+.main-nav-content{
+	padding-top:25px;
+	padding-left:100px;
+}
+
+.main-nav-content ul {
+	margin:0;
+	padding: 0;
 	list-style: none;
 }
 
-.main-nav ul li {
+.main-nav-content ul li {
 	display: inline-block;
-	margin: 20px;
+	margin-left: 40px;
 }
 
 /* login area */

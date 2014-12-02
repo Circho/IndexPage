@@ -8,7 +8,9 @@
 <title>Home</title>
 
 <!-- dojo support -->
-<script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.1/dojo/dojo.js"></script>
+<script src="<c:url value="/resources/dojo-toolkit/dojo/dojo.js" />"  data-dojo-config="async: true"></script>
+<link rel="stylesheet" href="<c:url value="/resources/dojo-toolkit/dijit/themes/nihilo.css" />" />
+
 <!--  local js-->
 <script type="text/javascript"
 	src="<c:url value="/resources/js/home.js" />"></script>
@@ -28,29 +30,34 @@
 	<header>
 		<div class="head-content">
 			<div class="home-Image">
-				<a href="#"><img
-					src="<c:url value="/resources/image/Shamrock.png"/>" alt="index"
-					class="head-imge" />index </a>
+				<a href=""><img
+					src="<c:url value="/resources/image/IndexPageLogo.png"/>"
+					alt="index" class="head-imge" /></a>
+			</div>
+			<!-- search -->
+			<div id="home-search">
+				<input type="text"><input type="button">
 			</div>
 
-			<div id="mainSearch" class="home-search">
-				<input type="text" />
-				<button>ok</button>
-			</div>
-
-			<div class="main-nav">
-				<ul>
-					<li><a href="">Reading</a></li>
-					<li><a href="">Group</a></li>
-					<li><a href=""> movie</a></li>
-					<li><a href="">more</a></li>
-				</ul>
+			<!-- login -->
+			<div id="home-login">
+				<a>Sign in</a>
 			</div>
 		</div>
 	</header>
 
+	<section id="nav-bar">
+		<div class="main-nav">
+			<ul>
+				<li><a href="">Reading</a></li>
+				<li><a href="">Group</a></li>
+				<li><a href=""> movie</a></li>
+				<li><a href="">more</a></li>
+			</ul>
+		</div>
+	</section>
 
-<c:if test="${sessionScope.IsLogin.level>=1}">
+	<c:if test="${sessionScope.IsLogin.level>=1}">
 用户：${sessionScope.IsLogin.userName} 已经登陆
 </c:if>
 
@@ -81,7 +88,7 @@
 
 		//这里是登陆的信息 //如果已经登陆，隐藏
 	</section>
-	
+
 
 
 
@@ -94,12 +101,12 @@
 			<td>level</td>
 		</tr>
 		<c:forEach items="${accounts}" var="account">
-		<tr>
-			<td>${account.userName}</td>
-			<td>${account.password}</td>
-			<td>${account.level}</td>
-		</tr>
-			</c:forEach>
+			<tr>
+				<td>${account.userName}</td>
+				<td>${account.password}</td>
+				<td>${account.level}</td>
+			</tr>
+		</c:forEach>
 	</table>
 
 

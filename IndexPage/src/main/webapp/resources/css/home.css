@@ -8,22 +8,24 @@ a,a:active,a:visited,a:hover {
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #f1f1f1;
 }
 
 /**head part*/
 header {
-	background-color: #f1f1f1;
 	margin: 0;
 	padding: 0;
+	background-color: #fff;
 }
 
 .head-content {
-	width: 950px;
-	margin: 0 auto 25px;
+//	width: 950px;
+//	margin: 0 auto;
+	
 }
 
 .head-imge {
-	width: 40px;
+	width:130px;
 }
 
 .main-nav {
@@ -35,7 +37,13 @@ header {
 }
 
 .home-search {
+	display: block;
+	
+}
+
+.home-login{
 	display: inline-block;
+	
 }
 
 .main-nav ul {

@@ -1,0 +1,95 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.bmuschko:gradle-tomcat-plugin:2.0'
+    }
+}
+
+
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'eclipse' 
+apply plugin: 'eclipse-wtp' 
+apply plugin: 'com.bmuschko.tomcat'
+apply plugin: 'eclipse-tomcat'
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
+apply plugin: 'jacoco'
+apply plugin: 'build-dashboard'
+apply plugin: "sonar-runner"
+apply plugin: 'jdepend'
+
+buildscript {
+    repositories {
+        maven { url 'http://jcenter.bintray.com' }
+    }
+    dependencies {
+        classpath 'com.anjlab:gradle-sysdeo-tomcat-plugin:1.0.3'
+    }
+}
+
+eclipseTomcat {
+    rootDir "src/main/webapp"
+    exportSource false
+    reloadable true
+    redirectLogger true
+    updateXml true
+    warLocation "build/libs/RenderInvestments.war"
+    webPath "RenderInvestments"
+}
+ 
+version = '1.0'
+ 
+// Uses JDK 7
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+ 
+ 
+// 1. Get dependencies from Maven local repository
+// 2. Get dependencies from Maven central repository
+repositories {
+	mavenLocal()
+    mavenCentral()
+}
+ 
+//Project dependencies
+dependencies {
+	compile 'org.springframework:spring-web:4.1.5.RELEASE'
+	compile 'org.springframework:spring-webmvc:4.1.5.RELEASE'
+	
+	// jstl library.
+	compile 'jstl:jstl:1.2'
+	
+	//include in compile only, exclude in the war
+	providedCompile 'javax.servlet:servlet-api:3.0-alpha-1'
+	
+	def tomcatVersion = '7.0.11'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+           "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}"
+    tomcat("org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}") {
+        exclude group: 'org.eclipse.jdt.core.compiler', module: 'ecj'
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.2.1'
+}
+
+tomcat {
+    httpPort = 8090
+}
+
+war.archiveName "RenderInvestments.war"
+
+task copyWar(type: Copy) {
+    // Copy everything under src/main/webapp
+    from 'build/libs'
+
+    def tomcatVersion = 'apache-tomcat-7.0.57'
+    // Determine the destination directory later
+    into '../DevEnv/apache-tomcat-7.0.57/webapps'
+}

@@ -13,4 +13,5 @@ hs_err_pid*
 
 
 # ignore folders
-DevEnv\
+DevEnv/
+workspace/

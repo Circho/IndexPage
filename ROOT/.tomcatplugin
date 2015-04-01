@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><tomcatProjectProperties>
+  <webClassPathEntries>
+    <webClassPathEntry>/ROOT/bin</webClassPathEntry>
+    <webClassPathEntry>C:/Users/jiefeng.yu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.1.5.RELEASE/8e542f560b65c920bf60cbc5db5b1097610fa94a/spring-web-4.1.5.RELEASE.jar</webClassPathEntry>
+    <webClassPathEntry>C:/Users/jiefeng.yu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.1.5.RELEASE/71b10b2ba7f6f0cce690d55e4bc8afc823d16628/spring-webmvc-4.1.5.RELEASE.jar</webClassPathEntry>
+    <webClassPathEntry>C:/Users/jiefeng.yu/.gradle/caches/modules-2/files-2.1/jstl/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar</webClassPathEntry>
+    <webClassPathEntry>C:/Users/jiefeng.yu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.5.RELEASE/f370549f6e84fe25671963c3f1c3f0e90d8b4cac/spring-aop-4.1.5.RELEASE.jar</webClassPathEntry>
+    <webClassPathEntry>C:/Users/jiefeng.yu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.1.5.RELEASE/5f82fae5c6359ff883e5e06c2c56169286b7e137/spring-beans-4.1.5.RELEASE.jar</webClassPathEntry>
+    <webClassPathEntry>C:/Users/jiefeng.yu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.1.5.RELEASE/483e58e37120c008df917abda73cd81f68d269/spring-context-4.1.5.RELEASE.jar</webClassPathEntry>
+    <webClassPathEntry>C:/Users/jiefeng.yu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.5.RELEASE/4f9af02bca3066ea0d5ac450332ca210c5de1957/spring-core-4.1.5.RELEASE.jar</webClassPathEntry>
+    <webClassPathEntry>C:/Users/jiefeng.yu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.1.5.RELEASE/e55a83a99260973099833cae425716ecb4b77850/spring-expression-4.1.5.RELEASE.jar</webClassPathEntry>
+    <webClassPathEntry>C:/Users/jiefeng.yu/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar</webClassPathEntry>
+    <webClassPathEntry>C:/Users/jiefeng.yu/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar</webClassPathEntry>
+  </webClassPathEntries>
+  <rootDir>src/main/webapp</rootDir>
+  <exportSource>false</exportSource>
+  <reloadable>true</reloadable>
+  <redirectLogger>true</redirectLogger>
+  <updateXml>true</updateXml>
+  <warLocation>build/libs/RenderInvestments.war</warLocation>
+  <webPath>RenderInvestments</webPath>
+  <extraInfo/>
+</tomcatProjectProperties>

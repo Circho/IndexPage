@@ -18,7 +18,7 @@ public class DefaultController {
     /**
      * Method for the GET request of the home page.
      *
-     * @param modelAndView
+     * @return modelAndView
      *            ModelAndView
      */
     @RequestMapping(method = RequestMethod.GET)
